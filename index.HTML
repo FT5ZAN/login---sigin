@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            /* background-color: blue; */
+            width: 1349px;
+            height: 90px;
+            display: flex;
+        }
+
+        .nav-list {
+            border: 2px solid purple;
+            /* background-color: white; */
+            backdrop-filter: blur(5px);
+            display: flex;
+            list-style: none;
+            width: 850px;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            border-radius: 60px;
+        }
+
+        .nav-list li img {
+            width: 55px;
+            position: relative;
+            border-radius: 100px;
+            left: -140px;
+            top: 5px;
+        }
+
+
+        .LOGO {
+            font-size: 55PX;
+            font-family: fantasy;
+            position: relative;
+            left: -140px;
+            color: white;
+        }
+
+        select {
+            /* border: 2px solid yellowgreen; */
+            font-size: 111%;
+            font-family: fantasy;
+            border-style: none;
+            position: relative;
+            right: -143px;
+            background-color: transparent;
+            color: white;
+        }
+
+        input {
+            position: relative;
+            right: -142px;
+            width: 295px;
+            height: 55px;
+            text-align: center;
+            border-radius: 88px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: transparent;
+        }
+
+        body {
+            min-height: 100vh;
+            min-width: 100vh;
+            background: url(Get\ more\ from\ KatoCraft\ _89\ on\ Patreon.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #login {
+            /* background-color: yellow; */
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            margin-top: 65px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            border: 5px solid purple;
+            box-shadow: 0px 0px 31px 24px;
+        }
+
+        #creat {
+            /* background-color: yellow;  */
+            width: 400px;
+            height: 495px;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            border: 5px solid purple;
+            box-shadow: 0px 0px 31px 24px;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: relative;
+            top: 10px;
+            left: 25px;
+            color: wheat;
+        }
+
+        p {
+            font-size: 25px;
+            position: relative;
+            top: 22px;
+            left: 25px;
+            font-family: fantasy;
+        }
+
+        #login input {
+            position: relative;
+            top: 15px;
+            left: 50px;
+            width: 300px;
+            height: 50px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+
+        #creat input {
+            position: relative;
+            top: 15px;
+            left: 50px;
+            width: 300px;
+            height: 50px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+
+        button {
+            position: relative;
+            padding: 10px;
+            border-radius: 15px;
+            top: 40px;
+            left: 165px;
+            background-color: #7b137b;
+            font-size: 20px;
+            font-family: fantasy;
+        }
+
+        u {
+            font-family: fantasy;
+            cursor: pointer;
+            position: relative;
+            top: 90px;
+            left: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><img src="/LOGO-removebg-preview.png" alt="Error"></li>
+            <li class="LOGO">VUET</li>
+            <li class="list"><label for="Categories"></label>
+                <select name="my Categories" id="Categories">
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="G.O.A.T">G.O.A.T</option>
+                    <option value="Categories" selected>Categories</option>
+                </select>
+            </li>
+            <div class="search">
+                <li><label for="search"></label>
+                    <input type="search" name="search" id="search" placeholder="Find your fvt Anime">
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <div class="container">
+        <form action="" id="2pages">
+            <div id="login">
+                <h1>LOGIN</h1>
+                <p>Email</p><br><input type="email" id="email" placeholder="Enter your Email"><br>
+                <p>Password</p> <br><input type="password" id="password" placeholder="Enter your Password"><br>
+                <button onclick="log()">Login</button>
+                <b onclick="change()" id="page-shift"><u> Create New Account </u></b>
+            </div>
+            <div id="creat">
+                <h1>Create New Account</h1>
+                <p>Name</p><br><input type="text" id="name" placeholder="Enter your Name"><br>
+                <p>Email</p><br><input type="email" id="ca-email" placeholder="Enter your Email"><br>
+                <p>Password</p> <br><input type="password" id="capassword" placeholder="Enter your Password"><br>
+                <button onclick="log()">Create</button>
+                <b onclick="change1()" id="page-shift"><u> Go To Login </u></b>
+            </div>
+        </form>
+    </div>
+    <script>
+        let login = document.getElementById("login");
+        let creat = document.getElementById("creat");
+        let capage = document.getElementById("page-shift");
+        creat.style.display = "none";
+
+        function log() {
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let name = document.getElementById("name").value;
+            if (email === '' && password === ''&& name === '') {
+                alert("Enter Email and Password");
+            } else {
+                alert("Login successful");
+            }
+        }
+
+        function change() {
+            if (login.style.display != 'none') {
+                login.style.display = 'none';
+                creat.style.display = 'block';
+            }
+        }
+
+        function change1() {
+            if (creat.style.display != 'none') {
+                creat.style.display = 'none';
+                login.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
